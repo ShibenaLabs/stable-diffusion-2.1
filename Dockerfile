@@ -12,7 +12,7 @@ RUN pip3 install -r requirements.txt
 ADD server.py .
 EXPOSE 8000
 
-ARG HF_AUTH_TOKEN
+ARG HF_AUTH_TOKEN=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
 
 ADD download.py .
 RUN python3 download.py
